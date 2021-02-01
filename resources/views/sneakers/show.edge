@@ -1,0 +1,19 @@
+@layout('layouts/app')
+
+@section('title')
+    Show 1 Sneakers Page
+
+@endsection
+
+@section('content')
+    <h1>Show 1 Sneakers Page </h1>
+    <div class="show-page">
+        <div class="img">
+        <h2>{{ sneaker.title }}</h2>
+            <img src="{{sneaker.image}}">
+            <p>
+               {{ sneaker.description}}}
+            </p>
+        </div>
+    </div>
+@endsection
